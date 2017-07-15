@@ -7,7 +7,7 @@ RUN echo >> ~/.gnupg/dirmngr_ldapservers.conf && \
     dirmngr < /dev/null && \
     pacman-key -r 9D5F1C051D146843CDA4858BDE64825E7CBC0D51 && \
     pacman-key --lsign-key 9D5F1C051D146843CDA4858BDE64825E7CBC0D51 && \
-    pacman -S --noconfirm archstrike-keyring archstrike-mirrorlist man-db;
+    pacman -S --noconfirm archstrike-keyring archstrike-mirrorlist man-db iproute2;
 
 RUN printf "$(head -n -2 /etc/pacman.conf)\n[archstrike]\nInclude = /etc/pacman.d/archstrike-mirrorlist\n" > /etc/pacman.conf && \
     pacman -Syu;
