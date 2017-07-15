@@ -1,6 +1,12 @@
+# ArchStrike
+
+An Arch Linux repository for security professionals and enthusiasts
+
+See: https://archstrike.org
+
 # About Arch Strike Docker
 
-There wasn't a close-to-official arch strike docker image available.
+I wanted a raw Arch base image + ArchStrike with no bloat added.
 
 Based on: https://hub.docker.com/r/pritunl/archlinux/
 
