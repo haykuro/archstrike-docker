@@ -11,3 +11,5 @@ RUN echo >> ~/.gnupg/dirmngr_ldapservers.conf && \
 
 RUN printf "$(head -n -2 /etc/pacman.conf)\n[archstrike]\nInclude = /etc/pacman.d/archstrike-mirrorlist\n" > /etc/pacman.conf && \
     pacman -Syu;
+
+CMD ["/bin/bash"]
