@@ -16,6 +16,12 @@ This Dockerfile follows these steps: https://archstrike.org/wiki/setup
 
 # Running it
 
+## Via Docker
+```
+docker run --rm -it haykuro/archstrike-docker:latest
+```
+
+## Via Git:
 ```
 git clone git@github.com:haykuro/archstrike-docker.git
 cd archstrike-docker
